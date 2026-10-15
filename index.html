@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Clase 100% gratis y sin trucos para servicios profesionales. Agente de IA gratis para siempre y súper fácil de usar. 20 de octubre, 16:00, Colombia.">
+    <meta name="description" content="Clase 100% gratis de IA para servicios profesionales. Agente gratis para siempre, fácil de usar. 20 oct., 16:00 Colombia.">
     <meta name="theme-color" content="#050505">
     <link rel="canonical" href="https://profesionales.redsapien.com/">
     <meta property="og:type" content="website">
@@ -12,7 +12,7 @@
     <meta property="og:site_name" content="Red Sapien">
     <meta property="og:url" content="https://profesionales.redsapien.com/">
     <meta property="og:title" content="Clase 100% gratis de IA para servicios profesionales | Red Sapien">
-    <meta property="og:description" content="Clase 100% gratis para servicios profesionales, sin trucos y en vivo. Agente de IA gratis para siempre y súper fácil de usar. 20 de octubre, 16:00, Colombia.">
+    <meta property="og:description" content="Clase 100% gratis, sin trucos y en vivo. IA para servicios profesionales. 20 oct., 16:00 Colombia.">
     <meta property="og:image" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta property="og:image:secure_url" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta property="og:image:alt" content="Red Sapien presenta una clase 100% gratis de IA para servicios profesionales">
@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Clase 100% gratis de IA para servicios profesionales | Red Sapien">
-    <meta name="twitter:description" content="100% gratis para servicios profesionales, sin trucos. Agente de IA gratis para siempre y súper fácil de usar.">
+    <meta name="twitter:description" content="Clase gratis de IA para profesionales. 20 oct., 16:00 Colombia.">
     <meta name="twitter:image" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta name="twitter:image:alt" content="Red Sapien presenta una clase 100% gratis de IA para servicios profesionales">
     <title>Clase 100% gratis de IA para servicios profesionales | Red Sapien</title>
@@ -462,7 +462,7 @@
         .benefit-section > * { position: relative; z-index: 1; }
         @keyframes benefit-ai-sweep {
             0%, 18% { transform: translateX(-100%); opacity: 0; }
-            35% { opacity: .55; }
+            35% { opacity: .45; }
             78%, 100% { transform: translateX(100%); opacity: 0; }
         }
         .case-section, .cta-section { padding-block: clamp(2.5rem, 4vw, 3rem); }
@@ -543,6 +543,60 @@
             .hero-cinematic::before, .mobile-frame-compact::after { animation: none !important; }
         }
     </style>
+
+    <style id="responsive-optimization-2026">
+        /* Keep the fixed header compact and legible from narrow phones to wide desktops. */
+        .site-header { min-height: 62px; gap: clamp(8px, 1.2vw, 16px); padding-inline: clamp(16px, 3vw, 40px); }
+        .header-brand { flex: 0 0 auto; white-space: nowrap; }
+        .header-event { flex: 0 1 auto; max-width: min(46vw, 360px); }
+        .header-event-copy { gap: 3px; }
+        .header-date { white-space: nowrap; }
+
+        /* Tighter hero rhythm; preserve the existing two-column order and video controls. */
+        .hero-spacing { padding-top: clamp(92px, 8vw, 108px); padding-bottom: 32px; }
+        .hero-cinematic { gap: clamp(28px, 2.5vw, 36px); }
+        .class-free-badge { margin-bottom: 20px; }
+        .hero-cinematic h1 { margin-bottom: 12px; }
+        .hero-description { margin-bottom: 18px; }
+        .video-column { gap: 10px; }
+        .mobile-frame-compact { box-sizing: border-box; width: min(100%, 260px); aspect-ratio: 9 / 16.5; padding: 7px; border-radius: 32px; }
+        .mobile-frame-compact::after { opacity: .26; }
+
+        /* Bring the section heading closer to its cards and remove excess empty card height. */
+        .benefit-section { padding-block: clamp(2.4rem, 4vw, 3.2rem); }
+        .benefit-section::before { opacity: .58; }
+        .benefit-section > .mb-8 { margin-bottom: clamp(1.25rem, 2vw, 1.6rem); }
+        .feature-grid { gap: clamp(12px, 1.4vw, 16px); }
+        .feature-card { min-height: 144px; gap: 10px; padding: 16px; border-radius: 16px; }
+        .feature-title { margin: 0 0 6px; line-height: 1.25; }
+        .feature-description { font-size: clamp(14px, .95vw, 15px); line-height: 1.42; }
+        .case-section, .cta-section { padding-block: clamp(2rem, 3.2vw, 2.4rem); }
+        @keyframes benefit-ai-sweep { 0%,18% { transform: translateX(-100%); opacity: 0; } 35% { opacity: .45; } 78%,100% { transform: translateX(100%); opacity: 0; } }
+
+        @media (min-width: 768px) { .hero-spacing { padding-top: clamp(104px, 8.2vw, 112px); padding-bottom: 32px; } }
+        @media (min-width: 1024px) {
+            .video-column, .mobile-frame-compact { max-width: clamp(300px, 24vw, 320px); }
+            .feature-card { min-height: 144px; padding: 18px; }
+        }
+        @media (max-width: 639px) {
+            .site-header { gap: 8px; padding-inline: 16px; }
+            .header-event { max-width: calc(100vw - 160px); padding: 7px 8px; }
+            .hero-spacing { padding-top: 92px; padding-bottom: 30px; }
+            .hero-cinematic { gap: 28px; }
+            .class-free-badge { margin-bottom: 18px; }
+            .benefit-section { padding-block: 2.25rem; }
+            .benefit-section > .mb-8 { margin-bottom: 1.25rem; }
+            .feature-grid { gap: 12px; }
+            .feature-card { min-height: 0; padding: 14px; gap: 12px; border-radius: 16px; }
+            .feature-icon { flex-basis: 42px; width: 42px; height: 42px; border-radius: 13px; }
+            .feature-icon svg { width: 22px; height: 22px; }
+            .feature-title { margin-bottom: 4px; font-size: 15px; }
+            .feature-description { font-size: 14px; line-height: 1.4; }
+            .case-section, .cta-section { padding-block: 2rem; }
+        }
+        @media (max-width: 360px) { .header-event { max-width: calc(100vw - 150px); } }
+    </style>
+
 </head>
 
 <body class="bg-rs-black text-white min-h-screen flex flex-col justify-between relative selection:bg-rs-red selection:text-white">
@@ -582,11 +636,11 @@
             </div>
 
             <h1 class="font-display text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-4 text-center lg:text-left cinema-reveal">
-                Más orden en WhatsApp. <span class="text-rs-red">Sus consultas, bajo control.</span>
+                Mejor atención <span class="text-rs-red">para sus clientes.</span>
             </h1>
 
             <p class="hero-description text-gray-300 leading-relaxed mb-6 text-center lg:text-left max-w-lg">
-                Aprenda cómo la IA puede apoyar la atención de consultas, la presentación de sus servicios y el seguimiento.
+                Aprenda a responder con calidez, explicar sus servicios y dar seguimiento con ayuda de IA.
             </p>
 
             <div class="w-full flex justify-center lg:justify-start">
@@ -594,7 +648,7 @@
                     Inscribirme
                 </button>
             </div>
-            <p class="agent-offer"><span class="agent-offer-icon" aria-hidden="true">✦</span><span class="agent-offer-copy">Agente de IA gratis para siempre.<br><strong>Súper fácil de usar.</strong></span></p>
+            <p class="agent-offer"><span class="agent-offer-icon" aria-hidden="true">✦</span><span class="agent-offer-copy">Agente de IA gratis para siempre.<br><strong>Fácil de usar.</strong></span></p>
         </div>
 
         <!-- COLUMNA DERECHA (PC) / ARRIBA (MÓVIL): VÍDEO EN MARCO MÓVIL -->
@@ -617,7 +671,7 @@
                 </div>
             </div>
             <button id="video-register-cta" class="video-register-cta" type="button" data-register-cta aria-haspopup="dialog" aria-controls="action-modal" aria-hidden="true" aria-live="polite" onclick="openModal()" hidden>
-                <span>Quiero inscribirme</span>
+                <span>Inscribirme</span>
                 <span class="video-register-arrow" aria-hidden="true">↗</span>
             </button>
         </div>
@@ -626,25 +680,25 @@
     <!-- ================= SECCIÓN DE CARACTERÍSTICAS (TÍTULO A LA MITAD) ================= -->
     <section class="relative z-10 py-8 px-6 max-w-5xl mx-auto text-center benefit-section">
         <div class="mb-8 max-w-xl mx-auto">
-            <h2 class="font-display text-2xl sm:text-3xl font-bold">Apoyo 24/7 para servicios profesionales</h2>
+            <h2 class="font-display text-2xl sm:text-3xl font-bold">Atención con calidez, 24/7</h2>
         </div>
 
         <div class="feature-grid grid grid-cols-1 md:grid-cols-2 gap-5">
             <article class="feature-card">
                 <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><circle cx="12" cy="12" r="8.25"/><path d="M12 7v5l3.2 1.8"/><path d="M3.75 12H2.5m16.1-6.6 1-1M5.4 5.4l-.9-.9"/></svg></span>
-                <div class="feature-card-copy"><h3 class="feature-title">Organiza</h3><p class="feature-description">Atienda preguntas frecuentes y organice solicitudes.</p></div>
+                <div class="feature-card-copy"><h3 class="feature-title">Resuelve dudas</h3><p class="feature-description">Preguntas comunes, con calidez.</p></div>
             </article>
             <article class="feature-card">
                 <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M5 5a3 3 0 0 1 3-3h11v19H8a3 3 0 0 1-3-3z"/><path d="M5 5v13a3 3 0 0 0 3 3m4-15h4m-4 4h4m-4 4h4m-8-8h.01m-.01 4h.01m-.01 4h.01"/></svg></span>
-                <div class="feature-card-copy"><h3 class="feature-title">Presenta sus servicios</h3><p class="feature-description">Comparta información clara cuando no pueda responder.</p></div>
+                <div class="feature-card-copy"><h3 class="feature-title">Comparte servicios</h3><p class="feature-description">Opciones claras al instante.</p></div>
             </article>
             <article class="feature-card">
                 <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M9 3V2h6v1m-6 6h7m-7 4h7m-7 4h4"/><path d="m6.5 9 1 1 1.5-2m-2.5 6 1 1 1.5-2"/></svg></span>
-                <div class="feature-card-copy"><h3 class="feature-title">Toma datos para la cita</h3><p class="feature-description">Recopile la información necesaria antes de coordinar.</p></div>
+                <div class="feature-card-copy"><h3 class="feature-title">Prepara la cita</h3><p class="feature-description">Datos listos antes de agendar.</p></div>
             </article>
             <article class="feature-card">
                 <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" focusable="false"><path d="M4 20h16M5 17V9m5 8V5m5 12v-5m5 5V7"/><path d="m4.5 6.5 5-3 4.5 3 5-2m-3 0h3v3"/></svg></span>
-                <div class="feature-card-copy"><h3 class="feature-title">Hace seguimiento</h3><p class="feature-description">Mantenga el seguimiento de consultas y citas por WhatsApp.</p></div>
+                <div class="feature-card-copy"><h3 class="feature-title">Da seguimiento</h3><p class="feature-description">Cada consulta, retomada a tiempo.</p></div>
             </article>
         </div>
     </section>
@@ -682,7 +736,7 @@
         <div class="modal-panel relative">
             <button id="modal-close" type="button" onclick="closeModal()" aria-label="Cerrar inscripción" class="modal-close absolute top-4 right-4 z-20">✕</button>
             <div class="modal-content">
-                <h2 id="modal-title" class="modal-title font-display font-bold text-white">Confirme su cupo</h2>
+                <h2 id="modal-title" class="modal-title font-display font-bold text-white">Inscripción</h2>
                 <form id="lead-form" onsubmit="submitForm(event)" class="modal-form">
                     <div class="modal-field">
                         <label class="form-label" for="lead-name">Nombre</label>
