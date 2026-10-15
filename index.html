@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Clase 100% gratis de IA para servicios profesionales. Agente gratis para siempre, fácil de usar. 20 oct., 16:00 Colombia.">
-    <meta name="theme-color" content="#050505">
+    <meta name="description" content="Clase 100% gratis de IA para servicios profesionales. Descubra cómo la IA podría ahorrarle hasta un 30% de su tiempo en consultas y citas. 20 oct., 16:00 Colombia.">
+    <meta name="theme-color" content="#39C6A2">
     <link rel="canonical" href="https://profesionales.redsapien.com/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_CO">
     <meta property="og:site_name" content="Red Sapien">
     <meta property="og:url" content="https://profesionales.redsapien.com/">
     <meta property="og:title" content="Clase 100% gratis de IA para servicios profesionales | Red Sapien">
-    <meta property="og:description" content="Clase 100% gratis, sin trucos y en vivo. IA para servicios profesionales. 20 oct., 16:00 Colombia.">
+    <meta property="og:description" content="Clase 100% gratis de IA para servicios profesionales. La IA podría ahorrarle hasta un 30% de su tiempo en consultas, citas y seguimiento. 20 oct., 16:00 Colombia.">
     <meta property="og:image" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta property="og:image:secure_url" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta property="og:image:alt" content="Red Sapien presenta una clase 100% gratis de IA para servicios profesionales">
@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Clase 100% gratis de IA para servicios profesionales | Red Sapien">
-    <meta name="twitter:description" content="Clase gratis de IA para profesionales. 20 oct., 16:00 Colombia.">
+    <meta name="twitter:description" content="Clase gratis de IA para profesionales. Descubra cómo la IA podría ahorrar hasta un 30% de su tiempo en consultas y citas.">
     <meta name="twitter:image" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta name="twitter:image:alt" content="Red Sapien presenta una clase 100% gratis de IA para servicios profesionales">
     <title>Clase 100% gratis de IA para servicios profesionales | Red Sapien</title>
@@ -596,6 +596,19 @@
         }
         @media (max-width: 360px) { .header-event { max-width: calc(100vw - 150px); } }
     </style>
+    <style id="professional-brand-polish">
+        .logo-item { overflow: hidden; transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease; }
+        .logo-item img { transition: transform .24s ease; }
+        @media (hover: hover) and (pointer: fine) {
+            .logo-item:hover { transform: translateY(-2px); border-color: rgba(57,198,162,.52); box-shadow: 0 14px 34px rgba(0,0,0,.28), 0 0 22px rgba(57,198,162,.11); }
+            .logo-item:hover img { transform: scale(1.04); }
+        }
+        @media (pointer: coarse) { .logo-item:active { transform: scale(.99); } }
+        @media (prefers-reduced-motion: reduce) {
+            .logo-item, .logo-item img { transition: none !important; }
+            .logo-item:hover, .logo-item:active, .logo-item:hover img { transform: none !important; }
+        }
+    </style>
 
 </head>
 
@@ -640,7 +653,7 @@
             </h1>
 
             <p class="hero-description text-gray-300 leading-relaxed mb-6 text-center lg:text-left max-w-lg">
-                Aprenda a responder con calidez, explicar sus servicios y dar seguimiento con ayuda de IA.
+                La IA podría ahorrarle hasta un 30% de su tiempo en consultas, citas y seguimiento.
             </p>
 
             <div class="w-full flex justify-center lg:justify-start">
@@ -736,15 +749,15 @@
         <div class="modal-panel relative">
             <button id="modal-close" type="button" onclick="closeModal()" aria-label="Cerrar inscripción" class="modal-close absolute top-4 right-4 z-20">✕</button>
             <div class="modal-content">
-                <h2 id="modal-title" class="modal-title font-display font-bold text-white">Inscripción</h2>
+                <h2 id="modal-title" class="modal-title font-display font-bold text-white">Reserve su cupo gratis</h2>
                 <form id="lead-form" onsubmit="submitForm(event)" class="modal-form">
                     <div class="modal-field">
                         <label class="form-label" for="lead-name">Nombre</label>
-                        <input type="text" id="lead-name" name="name" autocomplete="name" required maxlength="80" placeholder="Ej: Antonella López" class="w-full bg-neutral-900 border border-white/10 p-3 rounded-xl text-white outline-none focus:border-rs-red">
+                        <input type="text" id="lead-name" name="name" autocomplete="name" required maxlength="80" placeholder="Ej: Laura Gómez" class="w-full bg-neutral-900 border border-white/10 p-3 rounded-xl text-white outline-none focus:border-rs-red">
                     </div>
                     <div class="modal-field">
                         <label class="form-label" for="lead-brand">Profesión o negocio</label>
-                        <input type="text" id="lead-brand" name="business" autocomplete="organization" required maxlength="100" placeholder="Ej: Carolina Ruiz Psico Spa" class="w-full bg-neutral-900 border border-white/10 p-3 rounded-xl text-white outline-none focus:border-rs-red">
+                        <input type="text" id="lead-brand" name="business" autocomplete="organization" required maxlength="100" placeholder="Ej: consultorio u óptica" class="w-full bg-neutral-900 border border-white/10 p-3 rounded-xl text-white outline-none focus:border-rs-red">
                     </div>
                     <button type="submit" class="modal-submit">Confirmar por WhatsApp</button>
                 </form>
@@ -792,7 +805,7 @@
         const logoTrack = document.getElementById('logo-track');
         const logoAutoplayToggle = document.getElementById('logo-autoplay-toggle');
         const prefersReducedMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
-        let logoAutoplayEnabled = true;
+        let logoAutoplayEnabled = !prefersReducedMotion.matches;
         let lastModalOpener = null;
         let videoCtaShown = false;
         let videoCtaFrameId = null;
