@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Sitio web, IA, campañas y posicionamiento local para servicios profesionales. Un ecosistema digital en 3 fases, con pago contra entrega.">
+  <link rel="canonical" href="https://profesionales.redsapien.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:site_name" content="Red Sapien">
+  <meta property="og:url" content="https://profesionales.redsapien.com/">
+  <meta property="og:title" content="Servicios profesionales | Red Sapien">
+  <meta property="og:description" content="Web, IA, campañas y posicionamiento local en 3 fases. Pago contra entrega.">
+  <title>Servicios profesionales | Red Sapien</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#070707;--panel:#101012;--panel2:#151516;--text:#f7f7f8;--muted:#b6b8c0;--red:#ff5635;--red2:#ff8b69;--line:rgba(255,255,255,.11);--max:1120px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:82px}
+    body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    button,a{-webkit-tap-highlight-color:transparent}
+    a:focus-visible,summary:focus-visible{outline:2px solid #ffad93;outline-offset:4px;border-radius:8px}
+    .skip{position:fixed;top:10px;left:10px;z-index:100;background:#fff;color:#080808;padding:10px 14px;border-radius:10px;transform:translateY(-160%);font-weight:800}
+    .skip:focus{transform:translateY(0)}
+    .topline{height:5px;position:fixed;z-index:30;inset:0 0 auto;background:linear-gradient(90deg,#fcd116 50%,#003893 50% 75%,#ce1126 75%)}
+    .site-header{position:fixed;z-index:25;top:5px;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px max(18px,calc((100vw - var(--max))/2));background:rgba(7,7,7,.9);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(16px)}
+    .brand{display:flex;align-items:center;gap:10px;white-space:nowrap;font:800 13px/1 'Space Grotesk',sans-serif;letter-spacing:.08em}
+    .brand-dot{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 15px rgba(255,86,53,.75)}
+    .brand small{color:var(--red2);font-size:11px;letter-spacing:.12em}
+    .header-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 18px;border:1px solid rgba(255,155,125,.42);border-radius:14px;background:linear-gradient(135deg,#ff5937,#cf2f10);color:#fff;font-size:14px;font-weight:800;line-height:1.2;box-shadow:0 10px 26px rgba(255,65,30,.18);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+    .header-cta{min-height:40px;padding:10px 15px;font-size:13px}
+    .header-cta:hover,.button:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,65,30,.28)}
+    main{position:relative;isolation:isolate}
+    main::before{content:"";position:absolute;z-index:-1;inset:0 0 auto;height:780px;pointer-events:none;background:radial-gradient(ellipse at 76% 16%,rgba(255,70,38,.14),transparent 36%),radial-gradient(ellipse at 15% 44%,rgba(72,105,255,.055),transparent 34%),linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);background-size:auto,auto,64px 64px,64px 64px;mask-image:linear-gradient(#000 0%,transparent 96%)}
+    .wrap{width:min(var(--max),100% - 40px);margin-inline:auto}
+    .section{padding:78px 0}
+    .hero{padding:142px 0 86px;min-height:620px;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr);align-items:center;gap:56px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;margin:0 0 20px;padding:9px 13px;border:1px solid rgba(255,106,71,.3);border-radius:999px;background:rgba(255,75,42,.075);color:#ffc0aa;font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red)}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif}
+    h1{max-width:680px;margin-bottom:18px;font-size:clamp(40px,6vw,68px);font-weight:700;line-height:1.02;letter-spacing:-.055em;text-wrap:balance}
+    h1 span{color:var(--red2)}
+    .hero-copy{max-width:620px;margin-bottom:27px;color:#d0d2d8;font-size:clamp(17px,1.8vw,20px);line-height:1.6}
+    .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+    .button-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 17px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.035);color:#e5e6e9;font-weight:700;font-size:14px}
+    .hero-note{margin:18px 0 0;color:#c5c7cf;font-size:14px}
+    .hero-note strong{color:#fff}
+    .phase-preview{position:relative;overflow:hidden;padding:25px;border:1px solid rgba(255,255,255,.13);border-radius:26px;background:linear-gradient(150deg,rgba(25,25,28,.94),rgba(11,11,12,.92));box-shadow:0 24px 70px rgba(0,0,0,.42),0 0 45px rgba(255,60,30,.08)}
+    .phase-preview::before{content:"";position:absolute;width:190px;height:190px;top:-90px;right:-55px;border-radius:50%;background:rgba(255,73,42,.16);filter:blur(42px);pointer-events:none}
+    .preview-label{margin:0 0 18px;color:#ffad92;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .preview-row{position:relative;display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:14px;padding:15px 0;border-top:1px solid rgba(255,255,255,.09)}
+    .preview-num{display:grid;width:40px;height:40px;place-items:center;border:1px solid rgba(255,102,70,.33);border-radius:13px;background:rgba(255,70,38,.09);color:#ff9c7e;font:700 13px 'Space Grotesk',sans-serif}
+    .preview-row strong{display:block;font-size:15px;line-height:1.35}
+    .preview-row small{display:block;margin-top:4px;color:var(--muted);font-size:13px;line-height:1.4}
+    .preview-arrow{color:#ff916f;font-size:18px}
+    .section-heading{max-width:720px;margin:0 auto 34px;text-align:center}
+    .kicker{margin:0 0 11px;color:#ff9b7a;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    h2{margin-bottom:12px;font-size:clamp(30px,4.5vw,46px);line-height:1.1;letter-spacing:-.04em;text-wrap:balance}
+    .section-intro{margin:0;color:var(--muted);font-size:16px;line-height:1.6}
+    .benefits{position:relative;overflow:hidden;border-block:1px solid rgba(255,255,255,.055);background:radial-gradient(ellipse at 12% 35%,rgba(255,70,38,.075),transparent 32%),radial-gradient(ellipse at 88% 65%,rgba(75,112,255,.055),transparent 34%),#09090a}
+    .benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+    .benefit-card{display:flex;flex-direction:column;min-height:190px;padding:21px;border:1px solid rgba(255,255,255,.10);border-radius:20px;background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(15,15,16,.92) 60%,rgba(255,60,0,.035));box-shadow:inset 0 1px rgba(255,255,255,.045),0 12px 28px rgba(0,0,0,.16);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+    .benefit-card:hover{transform:translateY(-3px);border-color:rgba(255,120,85,.38);box-shadow:inset 0 1px rgba(255,255,255,.07),0 18px 38px rgba(0,0,0,.3),0 0 25px rgba(255,60,0,.08)}
+    .icon{display:grid;width:48px;height:48px;place-items:center;margin-bottom:19px;border:1px solid rgba(255,125,92,.31);border-radius:15px;background:linear-gradient(145deg,rgba(255,65,35,.15),rgba(255,255,255,.035));color:#ff9879;box-shadow:0 8px 24px rgba(255,60,0,.08)}
+    .icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .benefit-card h3{margin:0 0 10px;font-size:17px;line-height:1.25;letter-spacing:-.02em}
+    .benefit-card p{margin:0;color:#c3c6ce;font-size:15px;line-height:1.55}
+    .cases-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .case-card{overflow:hidden;border:1px solid rgba(255,255,255,.1);border-radius:21px;background:linear-gradient(160deg,#151517,#0d0d0e);box-shadow:0 14px 34px rgba(0,0,0,.24)}
+    .case-image{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;background:#111;border-bottom:1px solid rgba(255,255,255,.08)}
+    .case-copy{padding:20px 20px 22px}
+    .case-type{margin:0 0 9px;color:#ff9c7c;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .case-copy h3{margin:0 0 8px;font-size:19px;line-height:1.2}
+    .case-copy p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .offer{border-top:1px solid rgba(255,255,255,.06);background:radial-gradient(ellipse at 50% 0%,rgba(255,74,39,.09),transparent 50%),#09090a}
+    .phase-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:0 0 24px}
+    .phase-card{padding:21px;border:1px solid rgba(255,255,255,.1);border-radius:19px;background:rgba(255,255,255,.035)}
+    .phase-card .phase-num{display:block;margin-bottom:16px;color:#ff9879;font:700 13px 'Space Grotesk',sans-serif;letter-spacing:.08em}
+    .phase-card h3{margin:0 0 9px;font-size:18px;line-height:1.25}
+    .phase-card p{margin:0 0 15px;color:var(--muted);font-size:14px;line-height:1.5}
+    .phase-price{display:inline-block;color:#fff;font-size:15px;font-weight:800}
+    .price-panel{display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px;padding:22px 24px;border:1px solid rgba(255,112,77,.35);border-radius:20px;background:linear-gradient(110deg,rgba(255,68,37,.12),rgba(255,255,255,.035))}
+    .price-panel p{margin:0;color:#d4d5da;font-size:14px;line-height:1.55}
+    .price-panel strong{display:block;color:#fff;font:700 clamp(25px,4vw,36px)/1.05 'Space Grotesk',sans-serif}
+    .price-label{display:block;margin-bottom:6px;color:#ffad92;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .price-note{margin:15px 2px 0!important;color:#aeb1ba!important;font-size:13px!important}
+    .faq{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:30px 0 28px}
+    .faq details{padding:16px 17px;border:1px solid rgba(255,255,255,.09);border-radius:15px;background:rgba(255,255,255,.025)}
+    .faq summary{cursor:pointer;font-size:14px;font-weight:800;line-height:1.4}
+    .faq p{margin:10px 0 0;color:var(--muted);font-size:14px;line-height:1.5}
+    .final-cta{display:flex;justify-content:center;padding-top:10px}
+    footer{padding:26px 20px calc(26px + env(safe-area-inset-bottom));border-top:1px solid rgba(255,255,255,.07);color:#aeb1ba;text-align:center;font-size:13px}
+    footer p{margin:0}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;gap:32px;padding-top:128px}.hero-copy-wrap{max-width:760px}.phase-preview{max-width:650px}.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cases-grid{gap:14px}.case-copy{padding:17px}.phase-grid{gap:12px}}
+    @media(max-width:640px){.wrap{width:min(var(--max),100% - 32px)}.site-header{padding:10px 16px}.brand{font-size:12px;gap:8px}.brand small{font-size:10px}.header-cta{min-height:40px;padding:9px 12px;font-size:12px}.hero{padding:116px 0 58px;gap:29px;min-height:0}.eyebrow{margin-bottom:18px;font-size:11px;line-height:1.4;letter-spacing:.07em}h1{font-size:clamp(36px,10vw,48px);line-height:1.04;margin-bottom:18px}.hero-copy{font-size:17px;line-height:1.55;margin-bottom:23px}.hero-actions{display:grid;grid-template-columns:1fr;gap:11px}.button,.button-secondary{width:100%;min-height:52px;font-size:15px}.hero-note{font-size:14px;line-height:1.5}.phase-preview{padding:20px;border-radius:21px}.preview-row{grid-template-columns:40px 1fr auto;gap:11px;padding:14px 0}.preview-row strong{font-size:15px}.preview-row small{font-size:13px}.section{padding:62px 0}.section-heading{margin-bottom:27px}.section-intro{font-size:15px}.benefit-grid{grid-template-columns:1fr;gap:14px}.benefit-card{min-height:0;padding:18px;display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:14px;align-items:start}.icon{grid-row:1 / span 2;margin:0}.benefit-card h3{margin:1px 0 9px;font-size:17px}.benefit-card p{font-size:15px;line-height:1.5}.cases-grid{grid-template-columns:1fr;gap:16px}.case-image{aspect-ratio:16/9}.case-copy{padding:19px}.case-copy h3{font-size:19px}.phase-grid{grid-template-columns:1fr;gap:12px}.phase-card{padding:19px}.phase-card .phase-num{margin-bottom:12px}.price-panel{grid-template-columns:1fr;gap:13px;padding:20px}.price-panel strong{font-size:32px}.faq{grid-template-columns:1fr;gap:10px;margin:25px 0}.faq details{padding:16px}.final-cta{padding-top:8px}footer{font-size:13px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="topline" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Red Sapien, inicio"><span class="brand-dot" aria-hidden="true"></span><span>RED SAPIEN <small>// SERVICIOS</small></span></a>
+    <a class="header-cta" href="https://wa.me/573045625920?text=Hola%2C%20quiero%20conocer%20las%20tres%20fases%20del%20ecosistema%20digital%20de%20Red%20Sapien%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Hablemos <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy-wrap">
+        <p class="eyebrow">Odontología · Spa · Óptica y optometría</p>
+        <h1 id="hero-title">Más orden en WhatsApp. <span>Su negocio, bajo control.</span></h1>
+        <p class="hero-copy">Creamos un ecosistema digital y llevamos clientes directamente a su WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/573045625920?text=Hola%2C%20quiero%20conocer%20las%20tres%20fases%20del%20ecosistema%20digital%20de%20Red%20Sapien%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="button-secondary" href="#fases">Ver las 3 fases <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-note"><strong>$327.000 COP</strong> · 3 fases de $109.000 · pago contra entrega</p>
+      </div>
+      <aside class="phase-preview" aria-label="Las tres fases del ecosistema digital">
+        <p class="preview-label">Su negocio online en 3 fases</p>
+        <div class="preview-row"><span class="preview-num">01</span><span><strong>Sitio web + IA</strong><small>Una presencia clara para su servicio.</small></span><span class="preview-arrow" aria-hidden="true">↗</span></div>
+        <div class="preview-row"><span class="preview-num">02</span><span><strong>Campaña + seguimiento</strong><small>WhatsApp, correo y calendario.</small></span><span class="preview-arrow" aria-hidden="true">↗</span></div>
+        <div class="preview-row"><span class="preview-num">03</span><span><strong>SEO local + reputación</strong><small>Google, búsquedas y reseñas.</small></span><span class="preview-arrow" aria-hidden="true">↗</span></div>
+      </aside>
+    </section>
+
+    <section class="section benefits" aria-labelledby="benefits-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="kicker">Atención digital</p>
+          <h2 id="benefits-title">Cada consulta, mejor atendida</h2>
+          <p class="section-intro">Un recorrido simple desde la primera pregunta hasta el seguimiento.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.2"/><path d="M12 7v5l3 2"/><path d="M4 4l1.5 1.5M20 4l-1.5 1.5"/></svg></span><h3>Organiza consultas</h3><p>Ordena preguntas y solicitudes por WhatsApp.</p></article>
+          <article class="benefit-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5a3 3 0 0 1 3-3h11v19H8a3 3 0 0 1-3-3z"/><path d="M5 5v13a3 3 0 0 0 3 3m4-15h4m-4 4h4m-4 4h4m-8-8h.01m-.01 4h.01m-.01 4h.01"/></svg></span><h3>Comparte servicios</h3><p>Muestra opciones, precios y detalles clave.</p></article>
+          <article class="benefit-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M9 3V2h6v1m-6 6h7m-7 4h7m-7 4h4"/><path d="m6.5 9 1 1 1.5-2m-2.5 6 1 1 1.5-2"/></svg></span><h3>Toma datos clave</h3><p>Deja cada cita o solicitud lista para el siguiente paso.</p></article>
+          <article class="benefit-card"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M5 17V9m5 8V5m5 12v-5m5 5V7"/><path d="m4.5 6.5 5-3 4.5 3 5-2m-3 0h3v3"/></svg></span><h3>Hace seguimiento</h3><p>Conecta WhatsApp, correo y calendario.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="cases-title">
+      <div class="section-heading">
+        <p class="kicker">Casos reales</p>
+        <h2 id="cases-title">Servicios profesionales y marcas premium</h2>
+        <p class="section-intro">Ejemplos publicados por Red Sapien, sin atribuirles resultados no verificados.</p>
+      </div>
+      <div class="cases-grid">
+        <article class="case-card"><img class="case-image" src="assets/cases/Case-Carolina-Ruiz-Psico-Spa-PC.webp" width="1366" height="768" alt="Captura auténtica del sitio de Carolina Ruiz Psico Spa" loading="lazy" decoding="async"><div class="case-copy"><p class="case-type">Psico Spa + agenda</p><h3>Carolina Ruiz Psico Spa</h3><p>Agenda digital · Manizales y Villamaría.</p></div></article>
+        <article class="case-card"><img class="case-image" src="assets/cases/Case-Noir-Elixir-PC.webp" width="1366" height="768" alt="Captura auténtica del sitio de perfumería premium Noir Elixir" loading="lazy" decoding="async"><div class="case-copy"><p class="case-type">Perfumería premium</p><h3>Noir Elixir</h3><p>Fragancias premium · Medellín.</p></div></article>
+        <article class="case-card"><img class="case-image" src="assets/cases/Case-Adme-Dental-PC.webp" width="1366" height="768" alt="Captura auténtica del sitio de Adme Dental" loading="lazy" decoding="async"><div class="case-copy"><p class="case-type">Odontología + citas</p><h3>Adme Dental</h3><p>Odontología general y estética · 9 servicios · Manizales.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section offer" id="fases" aria-labelledby="phases-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="kicker">Una ruta clara</p>
+          <h2 id="phases-title">Su negocio online en 3 fases</h2>
+          <p class="section-intro">Avance por entregas, sin pagar todo al inicio.</p>
+        </div>
+        <div class="phase-grid">
+          <article class="phase-card"><span class="phase-num">FASE 01</span><h3>Sitio web + IA</h3><p>Una base digital clara para presentar su servicio.</p><span class="phase-price">$109.000 COP · contra entrega</span></article>
+          <article class="phase-card"><span class="phase-num">FASE 02</span><h3>Campaña + seguimiento</h3><p>Atención por WhatsApp, correo y calendario.</p><span class="phase-price">$109.000 COP · contra entrega</span></article>
+          <article class="phase-card"><span class="phase-num">FASE 03</span><h3>SEO local + reputación</h3><p>Perfil de Google, búsquedas locales y reseñas.</p><span class="phase-price">$109.000 COP · contra entrega</span></article>
+        </div>
+        <div class="price-panel"><div><span class="price-label">Ecosistema completo</span><strong>$327.000 COP</strong><p>3 fases de $109.000 · cada una se paga contra entrega.</p></div><a class="button" href="https://wa.me/573045625920?text=Hola%2C%20quiero%20conocer%20las%20tres%20fases%20del%20ecosistema%20digital%20de%20Red%20Sapien%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span aria-hidden="true">↗</span></a></div>
+        <p class="price-note">Hosting y dominio incluidos. La pauta se paga aparte a Meta desde $13.000 COP/día. No se garantizan resultados.</p>
+        <div class="faq" aria-label="Preguntas frecuentes">
+          <details><summary>¿Qué incluye?</summary><p>Sitio web + IA, campaña con seguimiento y posicionamiento en Google.</p></details>
+          <details><summary>¿Cómo se paga?</summary><p>Cada fase se paga contra entrega; no paga todo al inicio.</p></details>
+          <details><summary>¿La pauta está incluida?</summary><p>No. Se paga aparte directamente a Meta.</p></details>
+        </div>
+        <div class="final-cta"><a class="button" href="https://wa.me/573045625920?text=Hola%2C%20quiero%20conocer%20las%20tres%20fases%20del%20ecosistema%20digital%20de%20Red%20Sapien%20para%20mi%20negocio." target="_blank" rel="noopener noreferrer">Hablemos por WhatsApp <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+  </main>
+  <footer><p>Red Sapien · Manizales · Colombia · © 2026</p></footer>
+</body>
+</html>
