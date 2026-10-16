@@ -306,21 +306,6 @@
             object-fit: contain;
             filter: none;
         }
-        .logo-arrow {
-            flex: 0 0 42px;
-            width: 42px;
-            height: 42px;
-            border: 1px solid rgba(255,255,255,.14);
-            border-radius: 50%;
-            background: rgba(255,255,255,.06);
-            color: #fff;
-            font-size: 28px;
-            line-height: 1;
-            display: grid;
-            place-items: center;
-            transition: background .2s ease, border-color .2s ease;
-        }
-        .logo-arrow:hover { background: rgba(57,198,162,.2); border-color: rgba(57,198,162,.7); }
                 .header-event {
             display: flex; align-items: center; gap: 9px; max-width: min(54vw, 265px);
             padding: 8px 11px; border: 1px solid rgba(57,198,162,.34); border-radius: 15px;
@@ -423,7 +408,6 @@
             .feature-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
         }
         @media (max-width: 520px) {
-            .logo-arrow { flex-basis: 34px; width: 34px; height: 34px; font-size: 23px; }
             .logo-item { flex-basis: min(86vw, 300px); width: min(86vw, 300px); height: min(38vw, 120px); min-height: 92px; }
         }
 
@@ -600,11 +584,9 @@
         .logo-track::before, .logo-track::after { content: ""; flex: 0 0 max(0px, calc(50% - 150px)); height: 1px; pointer-events: none; }
         .logo-item { overflow: hidden; transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease; }
         .logo-item img { transition: transform .24s ease; }
-        .logo-arrow:focus-visible { outline: 2px solid #39C6A2; outline-offset: 3px; }
         @media (hover: hover) and (pointer: fine) {
             .logo-item:hover { transform: translateY(-2px); border-color: #39C6A285; box-shadow: 0 14px 34px rgba(0,0,0,.28), 0 0 22px #39C6A21c; }
             .logo-item:hover img { transform: scale(1.04); }
-            .logo-arrow:hover { border-color: #39C6A2; }
         }
         @media (pointer: coarse) { .logo-item:active { transform: scale(.99); } }
         @media (prefers-reduced-motion: reduce) {
@@ -722,13 +704,11 @@
     <section id="professional-cases" class="relative z-10 py-6 px-4 bg-[#080808] border-t border-b border-white/5 case-section" aria-label="Casos de servicios profesionales">
         <div class="max-w-6xl mx-auto">
             <div id="logo-slider" class="logo-carousel">
-                <button type="button" class="logo-arrow" aria-label="Ver caso anterior" aria-controls="logo-track" onclick="moveLogoSlider(-1)">‹</button>
-                <div id="logo-track" class="logo-track" role="region" aria-label="Casos de servicios profesionales. Deslice para verlos todos." tabindex="0">
+                <div id="logo-track" class="logo-track" role="region" aria-label="Carrusel automático de servicios profesionales. Use las flechas del teclado o deslice para navegar." tabindex="0">
                     <div class="logo-item"><img src="assets/Image/Logo-Carolina-Ruiz-Psico-Spa.webp" alt="Carolina Ruiz Psico Spa" width="500" height="500" loading="lazy" decoding="async"></div>
                     <div class="logo-item"><img src="assets/Image/Logo-Adme-Dental.webp" alt="Adme Dental" width="600" height="600" loading="lazy" decoding="async"></div>
                     <div class="logo-item"><img src="assets/Image/Noir-medellin.webp" alt="Noir Elixir" width="500" height="500" loading="lazy" decoding="async"></div>
                 </div>
-                <button type="button" class="logo-arrow" aria-label="Ver caso siguiente" aria-controls="logo-track" onclick="moveLogoSlider(1)">›</button>
             </div>
         </div>
     </section>
