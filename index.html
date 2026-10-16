@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Clase 100% gratis de IA para servicios profesionales. La IA podría ahorrarle hasta un 30% de su tiempo en consultas, citas y seguimiento.">
+    <meta name="description" content="Clase 100% gratis de IA para servicios profesionales. Descubra cómo la IA podría ahorrarle hasta un 30% de su tiempo en consultas y citas. 20 oct., 16:00 Colombia.">
     <meta name="theme-color" content="#39C6A2">
     <link rel="canonical" href="https://profesionales.redsapien.com/">
     <meta property="og:type" content="website">
@@ -12,7 +12,7 @@
     <meta property="og:site_name" content="Red Sapien">
     <meta property="og:url" content="https://profesionales.redsapien.com/">
     <meta property="og:title" content="Clase 100% gratis de IA para servicios profesionales | Red Sapien">
-    <meta property="og:description" content="Clase 100% gratis y sin trucos de IA para servicios profesionales. La IA podría ahorrarle tiempo en consultas, citas y seguimiento.">
+    <meta property="og:description" content="Clase 100% gratis de IA para servicios profesionales. La IA podría ahorrarle hasta un 30% de su tiempo en consultas, citas y seguimiento. 20 oct., 16:00 Colombia.">
     <meta property="og:image" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta property="og:image:secure_url" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta property="og:image:alt" content="Red Sapien presenta una clase 100% gratis de IA para servicios profesionales">
@@ -21,7 +21,7 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Clase 100% gratis de IA para servicios profesionales | Red Sapien">
-    <meta name="twitter:description" content="Clase gratis de IA para profesionales. La IA podría ahorrar hasta un 30% de su tiempo en consultas, citas y seguimiento.">
+    <meta name="twitter:description" content="Clase gratis de IA para profesionales. Descubra cómo la IA podría ahorrar hasta un 30% de su tiempo en consultas y citas.">
     <meta name="twitter:image" content="https://profesionales.redsapien.com/assets/Image/OpenGraph-Profesionales.jpg">
     <meta name="twitter:image:alt" content="Red Sapien presenta una clase 100% gratis de IA para servicios profesionales">
     <title>Clase 100% gratis de IA para servicios profesionales | Red Sapien</title>
@@ -272,7 +272,7 @@
             flex: 1 1 0%;
             width: 0;
             min-width: 0;
-            max-width: 760px;
+            max-width: 940px;
             align-items: center;
             gap: 16px;
             overflow-x: auto;
@@ -371,20 +371,7 @@
             from { opacity: .52; transform: translateX(-.6%) scale(.98); }
             to { opacity: .9; transform: translateX(.6%) scale(1.025); }
         }
-        .logo-controls { display: flex; align-items: center; gap: 8px; }
-        .logo-autoplay-toggle {
-            width: 32px;
-            height: 32px;
-            display: grid;
-            place-items: center;
-            border: 1px solid rgba(255,255,255,.14);
-            border-radius: 50%;
-            background: rgba(255,255,255,.05);
-            color: #e5e7eb;
-            font-size: 12px;
-            font-weight: 800;
-        }
-        @media (hover: hover) and (pointer: fine) { .logo-autoplay-toggle:hover { background: rgba(57,198,162,.18); border-color: rgba(57,198,162,.6); } }
+
         .services-link {
             display: inline-flex;
             align-items: center;
@@ -597,12 +584,27 @@
         @media (max-width: 360px) { .header-event { max-width: calc(100vw - 150px); } }
     </style>
     <style id="professional-brand-polish">
-        .logo-track::before, .logo-track::after { content: ""; flex: 0 0 max(0px, calc(50% - 150px)); height: 1px; pointer-events: none; }
         .logo-item { overflow: hidden; transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease; }
         .logo-item img { transition: transform .24s ease; }
         @media (hover: hover) and (pointer: fine) {
             .logo-item:hover { transform: translateY(-2px); border-color: rgba(57,198,162,.52); box-shadow: 0 14px 34px rgba(0,0,0,.28), 0 0 22px rgba(57,198,162,.11); }
             .logo-item:hover img { transform: scale(1.04); }
+        }
+        @media (pointer: coarse) { .logo-item:active { transform: scale(.99); } }
+        @media (prefers-reduced-motion: reduce) {
+            .logo-item, .logo-item img { transition: none !important; }
+            .logo-item:hover, .logo-item:active, .logo-item:hover img { transform: none !important; }
+        }
+    </style>
+    <style id="slider-enhancements">
+        .logo-track::before, .logo-track::after { content: ""; flex: 0 0 max(0px, calc(50% - 150px)); height: 1px; pointer-events: none; }
+        .logo-item { overflow: hidden; transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease; }
+        .logo-item img { transition: transform .24s ease; }
+        .logo-arrow:focus-visible { outline: 2px solid #39C6A2; outline-offset: 3px; }
+        @media (hover: hover) and (pointer: fine) {
+            .logo-item:hover { transform: translateY(-2px); border-color: #39C6A285; box-shadow: 0 14px 34px rgba(0,0,0,.28), 0 0 22px #39C6A21c; }
+            .logo-item:hover img { transform: scale(1.04); }
+            .logo-arrow:hover { border-color: #39C6A2; }
         }
         @media (pointer: coarse) { .logo-item:active { transform: scale(.99); } }
         @media (prefers-reduced-motion: reduce) {
@@ -719,11 +721,6 @@
 
     <section id="professional-cases" class="relative z-10 py-6 px-4 bg-[#080808] border-t border-b border-white/5 case-section" aria-label="Casos de servicios profesionales">
         <div class="max-w-6xl mx-auto">
-            <div class="flex items-center justify-end mb-2">
-                <div class="logo-controls">
-                    <button id="logo-autoplay-toggle" type="button" class="logo-autoplay-toggle" aria-pressed="false" aria-label="Pausar carrusel" title="Pausar carrusel" onclick="toggleLogoAutoplay()">Ⅱ</button>
-                </div>
-            </div>
             <div id="logo-slider" class="logo-carousel">
                 <button type="button" class="logo-arrow" aria-label="Ver caso anterior" aria-controls="logo-track" onclick="moveLogoSlider(-1)">‹</button>
                 <div id="logo-track" class="logo-track" role="region" aria-label="Casos de servicios profesionales. Deslice para verlos todos." tabindex="0">
@@ -804,9 +801,7 @@
         const modal = document.getElementById('action-modal');
         const registrationClosesAt = Date.parse('2026-10-19T00:00:00-05:00');
         const logoTrack = document.getElementById('logo-track');
-        const logoAutoplayToggle = document.getElementById('logo-autoplay-toggle');
         const prefersReducedMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
-        let logoAutoplayEnabled = !prefersReducedMotion.matches;
         let lastModalOpener = null;
         let videoCtaShown = false;
         let videoCtaFrameId = null;
@@ -851,24 +846,35 @@
             catch (_) { logoTrack.scrollLeft = target; }
         }
         function moveLogoSlider(direction) { scrollLogoSlider(direction); }
-        function syncLogoAutoplayButton() {
-            if (!logoAutoplayToggle) return;
-            const paused = !logoAutoplayEnabled;
-            logoAutoplayToggle.textContent = paused ? '▶' : 'Ⅱ';
-            logoAutoplayToggle.setAttribute('aria-pressed', String(paused));
-            logoAutoplayToggle.setAttribute('aria-label', paused ? 'Reanudar carrusel' : 'Pausar carrusel');
-            logoAutoplayToggle.title = paused ? 'Reanudar carrusel' : 'Pausar carrusel';
-        }
-        function toggleLogoAutoplay() {
-            logoAutoplayEnabled = !logoAutoplayEnabled;
-            syncLogoAutoplayButton();
+        if (logoTrack) {
+            logoTrack.addEventListener('keydown', (event) => {
+                if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+                    event.preventDefault();
+                    moveLogoSlider(event.key === 'ArrowRight' ? 1 : -1);
+                }
+            });
         }
         function advanceLogoSlider() {
-            if (!logoAutoplayEnabled || document.hidden) return;
+            if (prefersReducedMotion.matches || document.hidden) return;
             scrollLogoSlider(1);
         }
-        syncLogoAutoplayButton();
-        window.setInterval(advanceLogoSlider, 2000);
+        let logoAutoplayTimer = null;
+        function syncLogoAutoplayForMotion() {
+            if (prefersReducedMotion.matches) {
+                if (logoAutoplayTimer !== null) {
+                    window.clearInterval(logoAutoplayTimer);
+                    logoAutoplayTimer = null;
+                }
+            } else if (logoAutoplayTimer === null) {
+                logoAutoplayTimer = window.setInterval(advanceLogoSlider, 2000);
+            }
+        }
+        syncLogoAutoplayForMotion();
+        if (typeof prefersReducedMotion.addEventListener === 'function') {
+            prefersReducedMotion.addEventListener('change', syncLogoAutoplayForMotion);
+        } else if (typeof prefersReducedMotion.addListener === 'function') {
+            prefersReducedMotion.addListener(syncLogoAutoplayForMotion);
+        }
 
         function hideVideoOverlay() {
             if (!overlay) return;
